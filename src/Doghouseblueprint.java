@@ -1,4 +1,4 @@
-public class Doghouseblueprint {
+/** public class Doghouseblueprint {
     //Instant variable
     //Theses are the attributes of our doghouse
     private String colorOfDoghouse;
@@ -7,12 +7,24 @@ public class Doghouseblueprint {
     private int depthInFeet;
     private String nameOfDog;
 
-    public void setNameOfDog(String nameOfDog) {
+    public void setNameOfDog( String nameOfDog ) {
         this.nameOfDog = nameOfDog;
 
     }
 
-    public String getnameOfDog() {
-        return nameOfDog;
+    public void setColorOfDoghouse(String colorOfDoghouse) {
+        if( colorOfDoghouse.equals("Red") ) {
+            System.out.println("You cannot choose RED");
+        } else {
+            this.colorOfDoghouse = colorOfDoghouse;
+        }
+
     }
+
+    public String getColorOfDoghouse() { return colorOfDoghouse; }
+
+    public void setNameOfDog( String nameOfDog ) { this.nameOfDog = nameOfDog; }
+
+    public String getnameOfDog() { return nameOfDog; }
 }
+*/
