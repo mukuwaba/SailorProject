@@ -1,4 +1,4 @@
-/** public class Doghouseblueprint {
+ public class Doghouseblueprint {
     //Instant variable
     //Theses are the attributes of our doghouse
     private String colorOfDoghouse;
@@ -23,8 +23,7 @@
 
     public String getColorOfDoghouse() { return colorOfDoghouse; }
 
-    public void setNameOfDog( String nameOfDog ) { this.nameOfDog = nameOfDog; }
 
-    public String getnameOfDog() { return nameOfDog; }
+
+    public String getNameOfDog() { return nameOfDog; }
 }
-*/
