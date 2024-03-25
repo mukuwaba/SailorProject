@@ -9,25 +9,23 @@ public class Chptr3 {
     String lastName;
     double monthSal;
 
-    //constructor
-
 
     //set and get method
 
 
     public void setFirstName (String name){
-        this.name = name; //stores the name
+        this.firstName = name; //stores the name
     }
     public String getFirstName () {
-        return name; //return value of name to caller
+        return firstName; //return value of name to caller
     }
 
 
     public void setLastName (String name){
-        this.name = name; //stores the name
+        this.lastName = name; //stores the name
     }
     public String getLastName () {
-        return name; //return value of name to caller
+        return lastName; //return value of name to caller
     }
 
 
@@ -39,10 +37,6 @@ public class Chptr3 {
         return monthSal;
     }
 
-    //EmployeeTest
-
-
-        //2_ObjectsDisplayYearly+Raise
 
 
 } //class end
