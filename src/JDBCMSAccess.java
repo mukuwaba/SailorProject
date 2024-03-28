@@ -17,6 +17,7 @@ public class JDBCMSAccess {
 
         //creates a reference to execute the SQL statement
         ResultSet rs = st.executeQuery("SELECT * FROM Student");
+    //SELECT * FROM new_Sch
 
 
         // get header row information
