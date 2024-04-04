@@ -8,8 +8,6 @@ public class Account {
         String databaseURL = "";
 
 
-
-
         System.out.println("Do you have an account?");
         System.out.println("Type: \n  login \n  create");
 
@@ -21,6 +19,8 @@ public class Account {
                 String sql = "SELECT";
 
                 //enter username
+                System.out.println("Username:");
+
                 //search username
                 //"username not found"
                 //enter password
@@ -32,8 +32,7 @@ public class Account {
                 ex.printStackTrace();
             } //catch end
 
-        }
-        if (login == "create") {
+        } else if (login == "create") {
 
             //set name
             System.out.println("Please enter your first name");
@@ -73,13 +72,7 @@ public class Account {
                 ex.printStackTrace();
             } //catch end
 
-        }
-
-
-
-
-
-
+        } //end else if
 
 
     } // main end
