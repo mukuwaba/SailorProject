@@ -16,14 +16,32 @@ public class Account {
 
         if (login == "login") {
             try( Connection connection = DriverManager.getConnection(databaseURL) ) {
-                String sql = "SELECT";
-
                 //enter username
                 System.out.println("Username:");
+                Scanner uinput = new Scanner(System.in);
+                String UserName = uinput.next();
+
+                //enter password
+                System.out.println("Choose a password");
+                Scanner pinput = new Scanner(System.in);
+                String Password = pinput.next();
 
                 //search username
-                //"username not found"
-                //enter password
+                String sql = "SELECT ID, FirstName, LastName, UserName, Password FROM Account " +
+                        "WHERE UserName = ' AND Password = ' " + UserName + "' " + Password + "' ";
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+                System.out.printf ( "%d",  preparedStatement );
+
+
+                //Welcome FirstName LastName
+                //"username or password not found"
+                if ( preparedStatement == null ) {
+                    System.out.printf("Welcome %d %d");
+                }
+                else {
+                    System.out.println("username or password not found");
+                }
                 
 
                 connection.close();
