@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Account {
     public static void main(String[] args) {
 
-        String databaseURL = "";
+        String databaseURL = "jdbc:ucanaccess://C:/Users/sailor.rooley/Account.accdb";
 
 
         System.out.println("Do you have an account?");
@@ -37,11 +37,14 @@ public class Account {
                 //Welcome FirstName LastName
                 //"username or password not found"
                 if ( preparedStatement == null ) {
-                    System.out.printf("Welcome %d %d");
-                }
-                else {
                     System.out.println("username or password not found");
                 }
+                else {
+
+                    System.out.printf("Welcome %d %d");
+
+                }
+
                 
 
                 connection.close();
